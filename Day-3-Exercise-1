@@ -47,5 +47,6 @@ class Program
         {
             Console.WriteLine("Parse failed. Input value is too large or too small.");
         }
+            Console.ReadLine();
     }
 }
