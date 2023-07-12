@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercise_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number: ");
+            string input = Console.ReadLine();
+            int number;
+            if (int.TryParse(input, out number))  // Int.TryParse using to convert string to Integer.
+            {
+                Console.WriteLine("Console successful. The converted integer is: " +number);
+
+            } 
+            else
+            {
+                Console.WriteLine("Conversion failed. Invalid input. ");
+            }
+            Console.ReadLine();
+        }
+    }
+}
